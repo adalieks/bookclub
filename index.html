@@ -18,7 +18,11 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Fjalla+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google font - outfit - -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -29,21 +33,30 @@
 <body>
 
   <header>
-    <h1>Norman's Nook</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Reviews</a></li>
-        <li><a href="#">Past Books</a></li>
-        <li><a href="#">Fun</a></li>
-      </ul>
-    </nav>
+    <div class="content-wrapper">
+        <h1><p>An International Bookclub</p>
+        <img src="./img/logo.png" alt="Reading Rascals Logo"></h1>
+      <nav>
+        <ul class="menu">
+          <li><a class="menuItem" href="#">Activities</a></li>
+          <li><a class="menuItem" href="#">Past Books</a></li>
+          <li><a class="menuItem" href="#">FAQs</a></li>
+          <li><a class="menuItem" href="#">Reviews</a></li>
+        </ul>
+        <button class="hamburger">
+          <!-- material icons https://material.io/resources/icons/ -->
+          <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
+        </button>
+      </nav>
+    </div>
   </header>
+
   <main>
-    <div class="book-selection">
-    <h2>This Month's Book Selection:</h2>
-    <div class="carousel-container">
-      <div class="carousel-wrapper">
-        <div class="carousel">
+    
+    <section>
+      <div class="content-wrapper">
+        <h2>This Month's Book Selection:</h2>
           <div class="book">
             <img src="./img/book1.jpg" alt="Book 1">
             <h3>We Are Water Protectors</h3>
@@ -74,41 +87,44 @@
             <p>Author: Rachel Bright</p>
             <p>Ages: 3-5</p>
           </div>
+      </div> 
+    </section>
+
+    <section>
+      <div class="content-wrapper">
+        <div class="why-join">
+          <h2>Why Join Our Book Club?</h2>
+          <ul>
+            <li>Connect with other kids who love to read</li>
+            <li>Participate in online discussions</li>
+            <li>Win badges and prizes for completing book selections</li>
+            <li>Improve critical thinking and reading comprehension skills</li>
+          </ul>
         </div>
       </div>
-      <button class="prev">&#10094;</button>
-      <button class="next">&#10095;</button>
-    </div>
-    </div> 
-    <h2>Join the Book Club</h2>
-    <form>
-      <label>
-        Name:
-        <input type="text" />
-      </label>
-      <label>
-        Email:
-        <input type="email" />
-      </label>
-      <label>
-        Password:
-        <input type="password" />
-      </label>
-      <button type="submit">Join Now</button>
-    </form>
-    <div class="why-join">
-    <h2>Why Join Our Book Club?</h2>
-    <ul>
-      <li>Connect with other kids who love to read</li>
-      <li>Participate in online discussions</li>
-      <li>Win badges and prizes for completing book selections</li>
-      <li>Improve critical thinking and reading comprehension skills</li>
-    </ul>
-    </div>
+    </section>
+  
   </main>
+
   <footer>
-    <p> 2023 Norman's Nook
-    </p>
+    <div class="content-wrapper">
+      <h2>Join the Book Club</h2>
+      <form>
+        <label>
+          Name:
+          <input type="text" />
+        </label>
+        <label>
+          Email:
+          <input type="email" />
+        </label>
+        <label>
+          Password:
+          <input type="password" />
+        </label>
+        <button type="submit">Join Now</button>
+      </form>
+    </div>
   </footer>
   
   

@@ -1,25 +1,25 @@
-const carousel = document.querySelector('.carousel');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".hamburger");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
 
-let currentIndex = 0;
-const itemsToShow = 3;
-const itemsToScroll = 1;
-
-prevBtn.addEventListener('click', () => {
-  const targetIndex = currentIndex - itemsToScroll;
-  if (targetIndex < 0) {
-    return;
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
   }
-  currentIndex = targetIndex;
-  carousel.style.transform = `translateX(-${currentIndex * (100 / itemsToShow)}%)`;
-});
+}
 
-nextBtn.addEventListener('click', () => {
-  const targetIndex = currentIndex + itemsToScroll;
-  if (targetIndex > carousel.children.length - itemsToShow) {
-    return;
+hamburger.addEventListener("click", toggleMenu);
+
+menuItems.forEach( 
+  function(menuItem) { 
+    menuItem.addEventListener("click", toggleMenu);
   }
-  currentIndex = targetIndex;
-  carousel.style.transform = `translateX(-${currentIndex * (100 / itemsToShow)}%)`;
-});
+)
