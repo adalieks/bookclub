@@ -120,6 +120,12 @@ textarea {
 
   .content-wrapper {
     width: 100%;
+    margin: 0px auto;
+  }
+
+  p {
+    display: flex;
+    justify-content: center;
   }
 
   /* -------------------- Base Header - Footer Styles -------------------- */
@@ -176,75 +182,99 @@ textarea {
   .showMenu {
     transform: translateY(0);
   }
-  
-  .book-selection {
-    display: flex;
-    margin-bottom: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+
+  footer {
+    background-color: #ccc;
+    color: #333;
+    padding: 10
   }
 
-  .carousel-container {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-  }
+  /* -------------------- Mobile Styles - Homepage -------------------- */
   
-  .carousel-wrapper {
-    overflow: hidden;
-  }
-  
-  .carousel {
+  /* --- Book Selection --- */
+
+  .book-selection {
     display: flex;
-    justify-content: space-between;
-    transition: transform 0.5s ease;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #f0888e;
+  }
+
+  .theme-background {
+    background-image: url(../img/bravery-bkgd.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .book-selection h2 {
+    color: #fafbfa;
+    font-weight: 500;
+    font-size: 1.75em;
+    text-align: right;
+    margin-right: 17px;
+    text-shadow: #3f689e 1.25px 1.25px 8px;
+    line-height: 40px;
+  }
+
+  .book-selection h2 span {
+    font-size: 1.80em;
+    text-transform: uppercase;
   }
   
   .book {
-    width: 30%;
+    width: 60%;
     text-align: center;
-    margin: 0 10px;
+    padding: 40px 35px;
+    margin: 23px 25px;
+    border-radius: 25px;
+    background: #fafbfa;
+    box-shadow:  16px 16px 19px #df767c,
+             -16px -16px 19px #f7959a;
   }
   
   .book img {
     max-width: 100%;
   }
   
-  .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: none;
-    background-color: transparent;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .prev {
-    left: 10px;
-  }
-  
-  .next {
-    right: 10px;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .book {
-      width: 45%;
-    }
-  }
-  
   .book-details {
-    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 20px; 
   }
   
   .book-details h3 {
-    margin-top: 0;
+    font-size: 1.25em;
+    margin-bottom: 0px;
   }
+
+  .book-details span {
+    margin: 0px 4px 10px 4px;
+    font-size: 1em;
+    padding: 0.25em 0.5em;
+    background-color: #9962c4;
+    color: #FAFBFA;
+    font-weight: 400;
+    border-radius: 10em;
+    box-shadow: 0.15em 0.15em 0.5em rgba(0, 0, 0, 0.3);
+  }
+
+  .book-details button a {
+    color: #FAFBFA;
+    font-weight: 500;
+  }
+
+  .book-details button {
+    position: relative;
+    font-size: 1.2em;
+    margin-top: 10px;
+    padding: 0.7em 1.4em;
+    background-color: #f0888e;
+    border: none;
+    border-radius: 10em;
+    box-shadow: 0.15em 0.15em 0.5em rgba(0, 0, 0, 0.3);
+  }
+
+  /* --- Join Form --- */
   
   form label {
     display: block;
@@ -283,11 +313,7 @@ textarea {
     margin-left: 20px;
   }
   
-  footer {
-    background-color: #ccc;
-    color: #333;
-    padding: 10
-  }
+  
 
 
 /* ==========================================================================
