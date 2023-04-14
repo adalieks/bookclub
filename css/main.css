@@ -196,9 +196,85 @@ textarea {
   }
 
   footer {
-    background-color: #ccc;
-    color: #333;
-    padding: 10
+    background-color: #9962c4;
+    color: #fafbfa;
+  }
+
+  .footer-background {
+    background-image: url(../img/join-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: -1px;
+    min-height: 9em;
+  }
+
+  /* --- Join Form --- */
+
+  footer h2 {
+    font-size: 1.75em;
+  }
+
+  form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  form label {
+    display: block;
+    margin: 15px 40px 10px 40px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .tacbox {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: .4em;
+    margin: 15px auto 25px auto;
+    border: none;
+    color: #FAFBFA;
+    max-width: 800px;
+  }
+
+  .tacbox label {
+    margin: 0px 0px 0px 10px;
+  }
+  
+  .checkbox input {
+    height: 1.25em;
+    width: 1.25em;
+  }
+  
+  form button[type="submit"] {
+    background-color: #fafbfa;
+    color: #9962c4;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+
+  form button {
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+  
+  form button[type="submit"]:hover {
+    box-shadow: #5e397a 1.25px 1.75px 12px;
   }
 
   /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -245,6 +321,17 @@ textarea {
     box-shadow:  16px 16px 19px #df767c,
              -16px -16px 19px #f7959a;
   }
+
+  .last-book {
+    width: 60%;
+    text-align: center;
+    padding: 40px 35px;
+    margin: 23px 25px 45px 25px;
+    border-radius: 25px;
+    background: #fafbfa;
+    box-shadow:  16px 16px 19px #df767c,
+             -16px -16px 19px #f7959a;
+  }
   
   .book img {
     max-width: 100%;
@@ -286,46 +373,6 @@ textarea {
     border-radius: 10em;
     box-shadow: 0.15em 0.15em 0.5em rgba(0, 0, 0, 0.3);
   }
-
-  /* --- Join Form --- */
-  
-  form label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  form input[type="text"],
-  form input[type="email"],
-  form input[type="password"] {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    width: 100%;
-    max-width: 300px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-  }
-  
-  form button[type="submit"] {
-    background-color: #193FBD;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  form button[type="submit"]:hover {
-    background-color: #148f77;
-  }
-
-  
-  .why-join ul {
-    text-align: left;
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
   
 
 
